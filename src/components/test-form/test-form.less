@@ -1,0 +1,175 @@
+@color-gray-text: #929292;
+@color-green: #4ab969;
+@color-red: #e65e31;
+
+#testform {
+    margin: 50px auto;
+    max-width: 542px;
+
+    h1 {
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 16px;
+    }
+    .ant-form-item-control {
+        width: 100%;
+    }
+    .ant-form-item {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .ant-form-item-label {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+    }
+    .ant-input,
+    .ant-picker,
+    .ant-select-selector {
+        background-color: #f0f0f0;
+        border: 1px solid #f0f0f0;
+        height: 53px;
+        width: 100%;
+        border-radius: 3px;
+        font-size: 15px;
+        padding: 13px 17px 0;
+    }
+    .ant-input:focus,
+    .ant-input-focused,
+    .ant-picker-focused,
+    .ant-select-focused:not(.ant-select-disabled).ant-select-single:not(.ant-select-customize-input)
+        .ant-select-selector {
+        background-color: #fff;
+        box-shadow: none;
+        border: solid 1px #ebebeb;
+    }
+
+    .ant-form-item-has-error {
+        .ant-input:focus,
+        .ant-input-affix-wrapper:focus,
+        .ant-input-focused,
+        .ant-input-affix-wrapper-focused,
+        .ant-input,
+        .ant-input-affix-wrapper,
+        .ant-input:hover,
+        .ant-input-affix-wrapper:hover {
+            border-color: @color-red;
+        }
+    }
+    .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before,
+    .ant-form-item-label > label::after {
+        content: initial;
+    }
+    .ant-form-item-label > label {
+        height: 100%;
+        padding-left: 16px;
+        font-size: 16px;
+    }
+    .ant-form label {
+        color: @color-gray-text;
+        font-size: 15px;
+        height: 100%;
+        max-height: 53px;
+        display: flex;
+        align-items: center;
+        left: 17px;
+    }
+    .ant-form-item-explain,
+    .ant-form-item-extra {
+        font-size: 12px;
+        line-height: 1.2;
+        min-height: 16px;
+    }
+    [type="submit"] {
+        background-color: @color-green;
+        border-color: @color-green;
+        height: 53px;
+        width: 257px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    [type="submit"]:focus {
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.545);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.545);
+    }
+    form > .ant-form-item .ant-form-item-control-input-content {
+        text-align: right;
+    }
+
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+        padding-top: 5px;
+    }
+
+    .ant-select-item-option-content,
+    .ant-select-item-option:hover,
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+        color: #fff;
+        background-color: @color-green;
+    }
+
+    .ant-picker-input {
+        height: 53px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 12px 17px 0 17px;
+    }
+    .anticon-calendar svg,
+    .anticon-down svg {
+        opacity: 0;
+    }
+    .anticon-calendar {
+        background-position: center;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        top: calc(50% - 10px);
+        position: absolute;
+        right: 20px;
+    }
+    .anticon-down {
+        background-position: center;
+        background-size: 12px 15px;
+        background-repeat: no-repeat;
+        width: 9px;
+        height: 20px;
+        top: calc(50% - 10px);
+        position: absolute;
+        right: -5px;
+    }
+    .ant-picker-clear {
+        width: 20px;
+        height: 20px;
+        top: calc(50% - 10px);
+        right: 20px;
+        transform: initial;
+    }
+    .anticon-close-circle,
+    .anticon-close-circle svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .anticon-calendar {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2'%3E%3Cg fill='%23666'%3E%3Cpath d='M30.22 3.95h-1.1v-1.2c0-1.52-1.2-2.75-2.66-2.75a2.71 2.71 0 00-2.67 2.75v1.2h-2.74v-1.2c0-1.52-1.2-2.75-2.67-2.75a2.71 2.71 0 00-2.67 2.75v1.2h-2.74v-1.2c0-1.52-1.2-2.75-2.67-2.75a2.71 2.71 0 00-2.67 2.75v1.2h-1.4A4.26 4.26 0 001.96 8.2v24c0 2.34 1.91 4.25 4.25 4.25h24c2.35 0 4.25-1.91 4.25-4.25v-24c0-2.34-1.9-4.25-4.25-4.25zm-4.93-1.2c0-.69.52-1.25 1.17-1.25.64 0 1.17.56 1.17 1.25v4.9c0 .68-.53 1.25-1.17 1.25-.65 0-1.17-.56-1.17-1.25v-4.9zm-8.08 0c0-.69.52-1.25 1.17-1.25.64 0 1.17.56 1.17 1.25v4.9c0 .68-.53 1.25-1.17 1.25-.65 0-1.17-.56-1.17-1.25v-4.9zm-8.08 0c0-.69.52-1.25 1.17-1.25.64 0 1.17.56 1.17 1.25v4.9c0 .68-.53 1.25-1.17 1.25-.65 0-1.17-.56-1.17-1.25v-4.9zM31.97 32.2c0 .96-.78 1.75-1.75 1.75h-24c-.96 0-1.75-.79-1.75-1.75v-22h27.5v22z' fill-rule='nonzero'/%3E%3Cpath d='M25.13 25.54h4.6v4.09h-4.6v-4.09zm-13.81 4.09h-4.6v-4.09h4.6v4.09zm12.27 0h-4.6v-4.09h4.6v4.09zm-6.14 0h-4.6v-4.09h4.6v4.09zm-6.13-5.46h-4.6v-4.09h4.6v4.09zm12.27 0h-4.6v-4.09h4.6v4.09zm-6.14 0h-4.6v-4.09h4.6v4.09zm12.27 0h-4.6v-4.09h4.6v4.09zm-4.6-9.54h4.6v4.08h-4.6v-4.08zm-13.8 4.08h-4.6v-4.08h4.6v4.08zm12.27 0h-4.6v-4.08h4.6v4.08zm-6.14 0h-4.6v-4.08h4.6v4.08z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    .anticon-down {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 10 17' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='1.5'%3E%3Cg fill='none' stroke='%23666' stroke-width='1.04'%3E%3Cpath d='M.8 5.18L4.85.8l4.17 4.4M.8 10.54l4.11 5.12 4.11-5.09'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    .ant-select-item-option-content:hover,
+    .ant-select-item-option-active,
+    .ant-select-item-option-selected {
+        color: #fff;
+        background-color: @color-green;
+    }
+}
+
+.green-option.ant-select-item-option:hover {
+    background-color: @color-green;
+    color: #fff;
+}
+
+.green-option.ant-select-item-option-selected {
+    background-color: #f0f0f0;
+}
