@@ -86,7 +86,7 @@ const TestForm = props => {
         </FloatLabel>
 
 
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+        <Row gutter={{ sm: 15 }}>
           <Col xs={24} sm={12}>
             <FloatLabel label='Пол' value={gender}>
               <Form.Item name='gender'>
@@ -107,7 +107,7 @@ const TestForm = props => {
           </Col>
         </Row>
 
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+        <Row gutter={{ sm: 15 }}>
           <Col xs={24} sm={12}>
             <FloatLabel label='Мобильный телефон' value={phone}>
               <Form.Item
