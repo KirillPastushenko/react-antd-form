@@ -3,6 +3,8 @@ import MaskedInput from 'antd-mask-input';
 import FloatLabel from "../float-label/float-label";
 import { Form, Input, Button, Row, Col, DatePicker, Select } from 'antd';
 import 'antd/dist/antd.less';
+import 'moment/locale/ru';
+import locale from 'antd/es/date-picker/locale/ru_RU';
 import './test-form.less';
 
 const { Option } = Select;
@@ -101,7 +103,7 @@ const TestForm = props => {
           <Col xs={24} sm={12}>
             <FloatLabel label='Дата рождения' value={birthDate}>
               <Form.Item name='birthDate'>
-                <DatePicker value={birthDate} placeholder="" onChange={e => setBirthDate(e)} />
+                <DatePicker value={birthDate} locale={locale} placeholder="" onChange={e => setBirthDate(e)} />
               </Form.Item>
             </FloatLabel>
           </Col>
